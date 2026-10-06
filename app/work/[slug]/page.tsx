@@ -132,8 +132,8 @@ export default function CaseStudyPage({ params }: Props) {
               <p className="eyebrow mb-3">Process</p>
               <h2 className="mb-8 font-display text-3xl font-light text-ink">Before / After</h2>
               <BeforeAfterSlider
-                before={project.images[0]}
-                after={project.images[1] ?? project.images[0]}
+                before={(project.images ?? [])[0]}
+                after={(project.images ?? [])[1] ?? (project.images ?? [])[0]}
               />
             </Reveal>
           </section>
