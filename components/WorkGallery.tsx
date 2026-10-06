@@ -4,6 +4,16 @@ import { projects } from '@/lib/projects';
 import Reveal from '@/components/Reveal';
 
 export default function WorkGallery() {
+  if (projects.length === 0) {
+    return (
+      <section className="mx-auto max-w-container px-5 py-28 md:px-10">
+        <p className="font-mono text-xs uppercase tracking-[0.18em] text-muted">
+          No work added yet — add photos to lib/projects.ts
+        </p>
+      </section>
+    );
+  }
+
   return (
     <section className="mx-auto max-w-container px-5 py-12 md:px-10">
       <div className="columns-1 gap-5 sm:columns-2 lg:columns-3">
