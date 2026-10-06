@@ -1,0 +1,56 @@
+// Prisma schema — OBSCURA portfolio
+// SQLite for local/dev. Switch `provider` to "postgresql" for production.
+
+datasource db {
+  provider = "sqlite"
+  url      = env("DATABASE_URL")
+}
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+/// Inbound messages from the public contact form.
+model Inquiry {
+  id        String   @id @default(cuid())
+  name      String
+  email     String
+  subject   String?
+  budget    String?
+  message   String
+  status    String   @default("new")   // "new" | "qualified" | "proposal" | "closed"
+  notes     String?
+  createdAt DateTime @default(now())
+
+  @@index([createdAt])
+  @@index([status])
+}
+
+/// Discovery call bookings from the /booking page.
+model Booking {
+  id               String   @id @default(cuid())
+  name             String
+  email            String
+  callType         String   // "30min" | "60min"
+  date             String   // "YYYY-MM-DD"
+  timeSlot         String   // "10:00" | "11:00" etc.
+  projectNote      String?
+  status           String   @default("pending") // "pending" | "confirmed" | "cancelled"
+  managementToken  String?  @unique
+  stripeSessionId  String?
+  depositPaid      Boolean  @default(false)
+  createdAt        DateTime @default(now())
+
+  @@index([date])
+  @@index([createdAt])
+  @@index([managementToken])
+}
+
+/// Email waitlist / newsletter subscribers.
+model Waitlist {
+  id        String   @id @default(cuid())
+  email     String   @unique
+  createdAt DateTime @default(now())
+
+  @@index([createdAt])
+}

@@ -1,0 +1,17 @@
+{
+  "name": "OBSCURA — Design & Photography",
+  "short_name": "OBSCURA",
+  "description": "The portfolio of a graphic designer and photographer. Art direction, brand systems, and editorial imagery.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "background_color": "#ffffff",
+  "theme_color": "#0ea5e9",
+  "categories": ["portfolio", "design", "photography"],
+  "icons": [
+    { "src": "/icons/icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
+    { "src": "/icons/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" },
+    { "src": "/icons/maskable-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ]
+}
