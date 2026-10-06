@@ -5,7 +5,7 @@
   "description": "OBSCURA — a dark, cinematic graphic design & photography portfolio. Full-stack Next.js PWA with React Three Fiber 3D.",
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
+    "build": "prisma migrate deploy && next build",
     "start": "next start",
     "lint": "next lint",
     "postinstall": "prisma generate"

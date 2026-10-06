@@ -1,8 +1,7 @@
-// Prisma schema — OBSCURA portfolio
-// SQLite for local/dev. Switch `provider` to "postgresql" for production.
+// Prisma schema — Velora Captures portfolio
 
 datasource db {
-  provider = "sqlite"
+  provider = "postgresql"
   url      = env("DATABASE_URL")
 }
 
