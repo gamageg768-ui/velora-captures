@@ -28,14 +28,14 @@ export type Project = {
 // ─────────────────────────────────────────────────────────────────────────────
 
 export const projects: Project[] = [
-  // {
-  //   slug: 'portrait-session-01',
-  //   title: 'Golden Hour Portraits',
-  //   client: 'Personal Project',
-  //   year: '2024',
-  //   discipline: 'Portrait',
-  //   image: '/work/portrait-session-01.jpg',
-  // },
+  {
+    slug: 'portrait-01',
+    title: 'Portrait Session',
+    client: 'Personal Project',
+    year: '2024',
+    discipline: 'Portrait',
+    image: '/work/portrait-01.jpg',
+  },
 ];
 
 export const disciplines = [
