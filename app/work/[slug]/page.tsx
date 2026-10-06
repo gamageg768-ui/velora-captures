@@ -71,7 +71,7 @@ export default function CaseStudyPage({ params }: Props) {
                 <div>
                   <p className="eyebrow mb-1">Tags</p>
                   <div className="flex flex-wrap gap-2">
-                    {project.tags.map((tag) => (
+                    {(project.tags ?? []).map((tag) => (
                       <span
                         key={tag}
                         className="rounded-full border border-line px-3 py-1 font-mono text-[10px] uppercase tracking-[0.14em] text-muted"
@@ -108,9 +108,9 @@ export default function CaseStudyPage({ params }: Props) {
         </section>
 
         {/* Image grid */}
-        {project.images.length > 1 && (
+        {(project.images ?? []).length > 1 && (
           <section className="mt-20 grid grid-cols-1 gap-4 md:grid-cols-2">
-            {project.images.map((src, i) => (
+            {(project.images ?? []).map((src, i) => (
               <Reveal key={src + i} delay={i * 0.04}>
                 <div className="frame-hover overflow-hidden rounded-xl">
                   <img
@@ -126,7 +126,7 @@ export default function CaseStudyPage({ params }: Props) {
         )}
 
         {/* Before / After slider */}
-        {project.images.length >= 1 && (
+        {(project.images ?? []).length >= 1 && (
           <section className="mt-20 border-t border-line pt-16">
             <Reveal>
               <p className="eyebrow mb-3">Process</p>
