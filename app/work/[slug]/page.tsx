@@ -34,7 +34,7 @@ export default function CaseStudyPage({ params }: Props) {
         "creator": { "@type": "Organization", "name": "OBSCURA Studio" },
         "dateCreated": project.year,
         "description": project.overview,
-        "keywords": project.tags.join(', ')
+        "keywords": project.tags?.join(', ')
       }} />
       {/* Hero image */}
       <section className="relative overflow-hidden">
