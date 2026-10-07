@@ -4,6 +4,8 @@ import WorkGallery from '@/components/WorkGallery';
 import WorkIndex from '@/components/WorkIndex';
 import { projects } from '@/lib/projects';
 
+export const dynamic = 'force-dynamic';
+
 export const metadata: Metadata = {
   title: 'Work',
   description: 'Selected photography projects — portraits, editorial, commercial, and landscape.',

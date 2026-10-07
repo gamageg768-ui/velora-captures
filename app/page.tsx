@@ -5,6 +5,8 @@ import WorkPreview from '@/components/WorkPreview';
 import Testimonials from '@/components/Testimonials';
 import { disciplines } from '@/lib/projects';
 
+export const dynamic = 'force-dynamic';
+
 const services = [
   {
     n: '01',

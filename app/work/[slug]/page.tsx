@@ -4,6 +4,8 @@ import Link from 'next/link';
 import Reveal from '@/components/Reveal';
 import { prisma } from '@/lib/db';
 
+export const dynamic = 'force-dynamic';
+
 type Props = { params: { slug: string } };
 
 export async function generateStaticParams() {
