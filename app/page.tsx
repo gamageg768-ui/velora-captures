@@ -53,7 +53,7 @@ export default function HomePage() {
             Velora<span className="italic text-accent"> Captures</span>
           </h1>
           <div className="mt-8 flex flex-col items-start justify-between gap-6 md:flex-row md:items-end">
-            <p className="max-w-xl font-body text-lg leading-relaxed text-muted">
+            <p className="max-w-xl font-body text-base leading-relaxed text-muted">
               An independent photography studio for portraits, editorial, and commercial
               work. Every frame is composed deliberately and made to last.
             </p>
@@ -88,7 +88,7 @@ export default function HomePage() {
             </div>
             <div className="md:col-span-9">
               <Reveal>
-                <h2 className="font-display text-4xl font-light leading-[1.05] tracking-tightest text-ink md:text-6xl">
+                <h2 className="font-display text-3xl font-light leading-[1.05] tracking-tightest text-ink md:text-5xl">
                   We treat every project like a <span className="italic text-accent">photograph</span> —
                   composed deliberately, lit with care, and printed to last.
                 </h2>
@@ -135,7 +135,7 @@ export default function HomePage() {
                   <div className="group h-full bg-bg p-8 transition-colors hover:bg-surface/60 md:p-12">
                     <div className="flex items-baseline gap-4">
                       <span className="font-mono text-sm text-accent/80">{s.n}</span>
-                      <h3 className="font-display text-3xl font-light text-ink md:text-4xl">
+                      <h3 className="font-display text-2xl font-light text-ink md:text-3xl">
                         {s.title}
                       </h3>
                     </div>

@@ -35,7 +35,7 @@ export default async function WorkPreview() {
 
             <div className={cn('md:col-span-6', i % 2 === 1 && 'md:order-first md:col-start-2')}>
               <div className="flex items-baseline justify-between gap-4">
-                <h3 className="font-display text-5xl font-light leading-none text-ink transition group-hover:text-accent md:text-7xl">
+                <h3 className="font-display text-4xl font-light leading-none text-ink transition group-hover:text-accent md:text-6xl">
                   {p.title}
                 </h3>
                 <span className="font-mono text-xs text-muted">{p.year}</span>

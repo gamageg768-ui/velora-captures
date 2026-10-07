@@ -57,7 +57,7 @@ body {
 /* ---------- Typographic helpers ---------- */
 .eyebrow {
   font-family: var(--font-mono), monospace;
-  font-size: 0.72rem;
+  font-size: 0.65rem;
   letter-spacing: 0.28em;
   text-transform: uppercase;
   color: rgb(var(--muted));
@@ -67,14 +67,14 @@ body {
   font-weight: 300;
   line-height: 0.92;
   letter-spacing: -0.03em;
-  font-size: clamp(3rem, 13vw, 12rem);
+  font-size: clamp(2rem, 9vw, 8rem);
 }
 .h-section {
   font-family: var(--font-display), serif;
   font-weight: 300;
   line-height: 0.95;
   letter-spacing: -0.025em;
-  font-size: clamp(2.25rem, 6vw, 5rem);
+  font-size: clamp(1.5rem, 4vw, 3.5rem);
 }
 
 /* text outline (stroke) effect for layered headings */
@@ -124,7 +124,7 @@ body {
 /* ---------- Journal prose ---------- */
 .prose-journal {
   font-family: var(--font-body), system-ui, sans-serif;
-  font-size: 1.0625rem;
+  font-size: 0.9375rem;
   line-height: 1.75;
   color: rgb(var(--muted));
 }
@@ -139,9 +139,9 @@ body {
   margin-bottom: 1rem;
   line-height: 1.1;
 }
-.prose-journal h1 { font-size: clamp(2rem, 5vw, 3.5rem); }
-.prose-journal h2 { font-size: clamp(1.5rem, 3vw, 2.25rem); }
-.prose-journal h3 { font-size: 1.25rem; }
+.prose-journal h1 { font-size: clamp(1.5rem, 3vw, 2.5rem); }
+.prose-journal h2 { font-size: clamp(1.125rem, 2vw, 1.75rem); }
+.prose-journal h3 { font-size: 1rem; }
 .prose-journal p { margin-bottom: 1.5rem; }
 .prose-journal strong { color: rgb(var(--ink)); font-weight: 500; }
 .prose-journal em { font-style: italic; }

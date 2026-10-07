@@ -38,7 +38,7 @@ export default async function WorkGallery() {
                 <span className="font-mono text-[10px] uppercase tracking-[0.25em] text-accent">
                   {p.discipline}
                 </span>
-                <h3 className="mt-1 font-display text-2xl font-light text-white">{p.title}</h3>
+                <h3 className="mt-1 font-display text-xl font-light text-white">{p.title}</h3>
                 <p className="mt-1 font-mono text-[11px] text-white/60">
                   {p.client} — {p.year}
                 </p>

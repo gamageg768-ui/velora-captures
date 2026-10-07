@@ -47,7 +47,7 @@ export default async function WorkDetailPage({ params }: Props) {
             <div className="flex flex-wrap items-start justify-between gap-8 border-b border-line pb-10">
               <div>
                 <p className="eyebrow mb-3">{photo.discipline}</p>
-                <h1 className="font-display text-6xl font-light tracking-tightest text-ink md:text-8xl">
+                <h1 className="font-display text-5xl font-light tracking-tightest text-ink md:text-7xl">
                   {photo.title}
                 </h1>
               </div>

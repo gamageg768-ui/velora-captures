@@ -37,7 +37,7 @@ export default function Nav() {
     >
       <div className="mx-auto flex max-w-container items-center justify-between px-5 py-4 md:px-10">
         <Link href="/" className="text-ink" aria-label="Velora Captures home">
-          <LogoMark className="text-[18px] md:text-[22px]" />
+          <LogoMark className="text-[15px] md:text-[18px]" />
         </Link>
 
         <nav className="hidden items-center gap-9 md:flex">
@@ -84,7 +84,7 @@ export default function Nav() {
           <Link
             href="/booking"
             onClick={() => setOpen(false)}
-            className="flex items-center justify-between border-b border-line py-4 font-display text-2xl font-light text-accent"
+            className="flex items-center justify-between border-b border-line py-4 font-display text-xl font-light text-accent"
           >
             Book a Session
             <span className="font-mono text-xs text-accent/70">→</span>
@@ -94,7 +94,7 @@ export default function Nav() {
               key={l.href}
               href={l.href}
               onClick={() => setOpen(false)}
-              className="flex items-center justify-between border-b border-line py-4 font-display text-2xl font-light text-ink"
+              className="flex items-center justify-between border-b border-line py-4 font-display text-xl font-light text-ink"
             >
               {l.label}
               <span className="font-mono text-xs text-accent/70">{l.index}</span>

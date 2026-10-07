@@ -15,7 +15,7 @@ export default function BookingPage() {
         <div className="md:col-span-5">
           <Reveal>
             <p className="eyebrow mb-6">(Discovery call)</p>
-            <h1 className="font-display text-5xl font-light leading-[0.95] tracking-tightest text-ink md:text-7xl">
+            <h1 className="font-display text-4xl font-light leading-[0.95] tracking-tightest text-ink md:text-6xl">
               Let's talk
               <br />
               about your
