@@ -45,6 +45,21 @@ model Booking {
   @@index([managementToken])
 }
 
+/// Gallery photos uploaded via the admin panel.
+model Photo {
+  id          String   @id @default(cuid())
+  slug        String   @unique
+  title       String
+  client      String   @default("Personal Project")
+  year        String
+  discipline  String   @default("Portrait")
+  description String?
+  imageUrl    String
+  createdAt   DateTime @default(now())
+
+  @@index([createdAt])
+}
+
 /// Email waitlist / newsletter subscribers.
 model Waitlist {
   id        String   @id @default(cuid())
