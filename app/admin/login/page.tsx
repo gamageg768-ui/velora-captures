@@ -36,7 +36,7 @@ export default function AdminLoginPage() {
     <section className="flex min-h-screen items-center justify-center px-5">
       <form onSubmit={handleLogin} className="w-full max-w-sm space-y-6">
         <div>
-          <p className="eyebrow mb-2">OBSCURA</p>
+          <p className="eyebrow mb-2">Velora Captures</p>
           <h1 className="font-display text-4xl font-light text-ink">Admin access</h1>
         </div>
         <input
