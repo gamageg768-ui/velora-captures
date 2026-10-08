@@ -17,7 +17,7 @@ export default function WorkPage() {
       {/* intro */}
       <section className="mx-auto max-w-container px-5 pb-10 pt-36 md:px-10 md:pb-16 md:pt-44">
         <Reveal>
-          <p className="eyebrow mb-6">(Selected projects — 2023–2025)</p>
+          <p className="eyebrow mb-6">(Selected projects — 2026)</p>
           <h1 className="display-fluid text-ink">
             The <span className="italic text-accent">Gallery</span>
           </h1>
