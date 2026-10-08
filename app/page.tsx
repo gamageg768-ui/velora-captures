@@ -43,7 +43,7 @@ export default function HomePage() {
       />
 
       {/* ---------------- HERO ---------------- */}
-      <section className="relative z-10 flex min-h-[100svh] flex-col justify-end px-5 pb-16 md:px-10 md:pb-24">
+      <section className="relative z-10 flex min-h-[100svh] flex-col justify-center px-5 md:px-10">
         <div className="mx-auto w-full max-w-container">
           <p className="eyebrow mb-6 animate-floaty">
             Photography · Est. 2026
