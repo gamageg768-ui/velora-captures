@@ -1,5 +1,4 @@
 import Link from 'next/link';
-import WaitlistForm from './WaitlistForm';
 import LogoMark from './LogoMark';
 
 export default function Footer() {
@@ -31,12 +30,6 @@ export default function Footer() {
           >
             View availability →
           </Link>
-        </div>
-
-        <div className="mt-12 border-t border-line pt-8">
-          <p className="eyebrow mb-3">Join the waitlist</p>
-          <p className="mb-4 max-w-sm font-body text-sm text-muted">Get first notice when new project slots open.</p>
-          <WaitlistForm />
         </div>
 
         <div className="mt-20 flex flex-col gap-8 border-t border-line pt-8 md:flex-row md:items-center md:justify-between">
