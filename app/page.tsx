@@ -2,7 +2,6 @@ import Link from 'next/link';
 import Marquee from '@/components/Marquee';
 import Reveal from '@/components/Reveal';
 import WorkPreview from '@/components/WorkPreview';
-import Testimonials from '@/components/Testimonials';
 import { disciplines } from '@/lib/projects';
 
 export const dynamic = 'force-dynamic';
@@ -147,8 +146,7 @@ export default function HomePage() {
           </div>
         </section>
 
-        {/* ---------------- TESTIMONIALS ---------------- */}
-        <Testimonials />
+
       </div>
     </>
   );
