@@ -47,14 +47,14 @@ export default function HomePage() {
       <section className="relative z-10 flex min-h-[100svh] flex-col justify-end px-5 pb-16 md:px-10 md:pb-24">
         <div className="mx-auto w-full max-w-container">
           <p className="eyebrow mb-6 animate-floaty">
-            Photography · Est. 2019
+            Photography · Est. 2026
           </p>
           <h1 className="display-fluid text-ink">
             Velora<span className="italic text-accent"> Captures</span>
           </h1>
           <div className="mt-8 flex flex-col items-start justify-between gap-6 md:flex-row md:items-end">
             <p className="max-w-xl font-body text-base leading-relaxed text-muted">
-              An independent photography studio for portraits, editorial, and commercial
+              An independent photographer for portraits, editorial, and commercial
               work. Every frame is composed deliberately and made to last.
             </p>
             <Link
@@ -79,11 +79,11 @@ export default function HomePage() {
         <Marquee items={disciplines} />
 
         {/* ---------------- STUDIO ---------------- */}
-        <section id="studio" className="mx-auto max-w-container px-5 py-28 md:px-10 md:py-40">
+        <section id="about" className="mx-auto max-w-container px-5 py-28 md:px-10 md:py-40">
           <div className="grid grid-cols-1 gap-12 md:grid-cols-12">
             <div className="md:col-span-3">
               <Reveal>
-                <p className="eyebrow">(Studio)</p>
+                <p className="eyebrow">(About)</p>
               </Reveal>
             </div>
             <div className="md:col-span-9">

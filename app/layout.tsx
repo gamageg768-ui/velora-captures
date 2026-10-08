@@ -38,11 +38,11 @@ const logo = Josefin_Sans({
 export const metadata: Metadata = {
   metadataBase: new URL('https://veloracaptures.com'),
   title: {
-    default: 'Velora Captures — Photography Studio',
+    default: 'Velora Captures — Photography',
     template: '%s — Velora Captures',
   },
   description:
-    'An independent photography studio for portraits, editorial, and commercial work. Every frame is composed deliberately and made to last.',
+    'An independent photographer for portraits, editorial, and commercial work. Every frame is composed deliberately and made to last.',
   manifest: '/manifest.json',
   applicationName: 'Velora Captures',
   appleWebApp: {
@@ -51,7 +51,7 @@ export const metadata: Metadata = {
     title: 'Velora Captures',
   },
   openGraph: {
-    title: 'Velora Captures — Photography Studio',
+    title: 'Velora Captures — Photography',
     description: 'Portraits, editorial, and commercial photography. Every frame made to last.',
     type: 'website',
   },
@@ -72,7 +72,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           "@context": "https://schema.org",
           "@type": "LocalBusiness",
           "name": "Velora Captures",
-          "description": "An independent photography studio for portraits, editorial, and commercial work.",
+          "description": "An independent photographer for portraits, editorial, and commercial work.",
           "url": "https://veloracaptures.com",
           "email": "contact.veloralabs@gmail.com",
           "sameAs": ["https://instagram.com/veloracaptures"]
