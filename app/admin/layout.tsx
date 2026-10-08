@@ -12,8 +12,7 @@ export default function AdminLayout({ children }: { children: React.ReactNode })
             <Link href="/admin" className="hover:text-ink transition-colors">Overview</Link>
             <Link href="/admin/upload" className="hover:text-ink transition-colors">Photos</Link>
             <Link href="/admin/inquiries" className="hover:text-ink transition-colors">Inquiries</Link>
-            <Link href="/admin/bookings" className="hover:text-ink transition-colors">Bookings</Link>
-            <Link href="/admin/waitlist" className="hover:text-ink transition-colors">Waitlist</Link>
+            <Link href="/admin/availability" className="hover:text-ink transition-colors">Availability</Link>
             <Link href="/" className="hover:text-ink transition-colors">← Site</Link>
           </nav>
         </div>

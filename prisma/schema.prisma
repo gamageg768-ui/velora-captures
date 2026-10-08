@@ -68,3 +68,13 @@ model Waitlist {
 
   @@index([createdAt])
 }
+
+/// Dates blocked by the photographer — all other weekdays show as available.
+model Availability {
+  id        String   @id @default(cuid())
+  date      String   @unique  // YYYY-MM-DD
+  note      String?
+  createdAt DateTime @default(now())
+
+  @@index([date])
+}
