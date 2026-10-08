@@ -10,7 +10,7 @@ const services = [
   {
     n: '01',
     title: 'Portrait Sessions',
-    body: 'People, expression, and connection — shot on medium format or full-frame, always in natural or practised light.',
+    body: 'People, expression, and connection — always in natural or carefully considered light.',
   },
   {
     n: '02',
