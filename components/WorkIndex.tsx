@@ -3,27 +3,34 @@
 import { useState, useMemo } from 'react'
 import Link from 'next/link'
 import Fuse from 'fuse.js'
-import type { Project } from '@/lib/projects'
 
-export default function WorkIndex({ projects }: { projects: Project[] }) {
+type Photo = {
+  slug: string
+  title: string
+  client: string
+  year: string
+  discipline: string
+}
+
+export default function WorkIndex({ photos }: { photos: Photo[] }) {
   const [query, setQuery] = useState('')
   const [activeTag, setActiveTag] = useState<string | null>(null)
 
-  // Unique disciplines from projects
   const disciplines = useMemo(() =>
-    Array.from(new Set(projects.map(p => p.discipline))), [projects])
+    Array.from(new Set(photos.map(p => p.discipline))), [photos])
 
-  // Fuse.js for fuzzy search on title, client, discipline, tags
-  const fuse = useMemo(() => new Fuse(projects, {
-    keys: ['title', 'client', 'discipline', 'tags'],
+  const fuse = useMemo(() => new Fuse(photos, {
+    keys: ['title', 'client', 'discipline'],
     threshold: 0.3,
-  }), [projects])
+  }), [photos])
 
   const filtered = useMemo(() => {
-    let result = query ? fuse.search(query).map(r => r.item) : projects
+    let result = query ? fuse.search(query).map(r => r.item) : photos
     if (activeTag) result = result.filter(p => p.discipline === activeTag)
     return result
-  }, [query, activeTag, fuse, projects])
+  }, [query, activeTag, fuse, photos])
+
+  if (photos.length === 0) return null
 
   return (
     <div>
@@ -59,7 +66,7 @@ export default function WorkIndex({ projects }: { projects: Project[] }) {
         </div>
       </div>
 
-      {/* Results count */}
+      {/* Header */}
       <div className="mb-4 flex items-end justify-between border-b border-line pb-4">
         <h2 className="h-section text-ink">Index</h2>
         <span className="font-mono text-xs uppercase tracking-[0.18em] text-muted">
@@ -67,9 +74,11 @@ export default function WorkIndex({ projects }: { projects: Project[] }) {
         </span>
       </div>
 
-      {/* Project rows */}
+      {/* Rows */}
       {filtered.length === 0 ? (
-        <p className="py-16 text-center font-mono text-sm text-muted">No projects match &ldquo;{query}&rdquo;</p>
+        <p className="py-16 text-center font-mono text-sm text-muted">
+          No projects match &ldquo;{query}&rdquo;
+        </p>
       ) : (
         <div>
           {filtered.map((p, i) => (

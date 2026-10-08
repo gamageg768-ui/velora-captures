@@ -2,7 +2,7 @@ import type { Metadata } from 'next';
 import Reveal from '@/components/Reveal';
 import WorkGallery from '@/components/WorkGallery';
 import WorkIndex from '@/components/WorkIndex';
-import { projects } from '@/lib/projects';
+import { prisma } from '@/lib/db';
 
 export const dynamic = 'force-dynamic';
 
@@ -11,7 +11,12 @@ export const metadata: Metadata = {
   description: 'Selected photography projects — portraits, editorial, commercial, and landscape.',
 };
 
-export default function WorkPage() {
+export default async function WorkPage() {
+  const photos = await prisma.photo.findMany({
+    orderBy: { createdAt: 'desc' },
+    select: { slug: true, title: true, client: true, year: true, discipline: true },
+  });
+
   return (
     <>
       {/* intro */}
@@ -33,7 +38,7 @@ export default function WorkPage() {
       {/* full index */}
       <section className="mx-auto max-w-container px-5 py-24 md:px-10 md:py-32">
         <Reveal>
-          <WorkIndex projects={projects} />
+          <WorkIndex photos={photos} />
         </Reveal>
       </section>
     </>
