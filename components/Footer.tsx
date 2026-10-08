@@ -20,12 +20,6 @@ export default function Footer() {
           </Link>
           <Link
             href="/booking"
-            className="font-mono text-sm uppercase tracking-[0.18em] text-accent link-underline"
-          >
-            Book a discovery call →
-          </Link>
-          <Link
-            href="/availability"
             className="font-mono text-sm uppercase tracking-[0.18em] text-muted link-underline hover:text-ink transition-colors"
           >
             View availability →
