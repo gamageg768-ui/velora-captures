@@ -34,11 +34,19 @@ export default function Footer() {
             <a href="https://instagram.com/veloracaptures" target="_blank" rel="noreferrer noopener" aria-label="Velora Captures on Instagram" className="link-underline hover:text-ink">
               Instagram
             </a>
+            <a href="https://www.facebook.com/share/1CKuFDEZzH/" target="_blank" rel="noreferrer noopener" aria-label="Velora Captures on Facebook" className="link-underline hover:text-ink">
+              Facebook
+            </a>
             <Link href="/work" className="link-underline hover:text-ink">
               Work
             </Link>
           </div>
-          <p className="font-mono text-[11px] text-muted/70">© {year} Velora Captures</p>
+          <div className="flex items-center gap-4">
+            <p className="font-mono text-[11px] text-muted/70">© {year} Velora Captures</p>
+            <Link href="/admin" className="font-mono text-[10px] text-muted/30 hover:text-muted transition-colors">
+              Admin
+            </Link>
+          </div>
         </div>
       </div>
     </footer>
