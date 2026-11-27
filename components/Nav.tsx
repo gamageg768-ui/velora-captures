@@ -8,9 +8,10 @@ import LogoMark from './LogoMark';
 
 const links = [
   { href: '/work', label: 'Work', index: '01' },
-  { href: '/#about', label: 'About', index: '02' },
-  { href: '/#services', label: 'Services', index: '03' },
-  { href: '/contact', label: 'Contact', index: '04' },
+  { href: '/work', label: 'Gallery', index: '02' },
+  { href: '/#about', label: 'About', index: '03' },
+  { href: '/#services', label: 'Services', index: '04' },
+  { href: '/contact', label: 'Contact', index: '05' },
 ];
 
 export default function Nav() {
